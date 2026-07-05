@@ -1,0 +1,436 @@
+# my-portfolio
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abhijeet Kumar | Senior Power BI Developer | Microsoft Fabric</title>
+
+    <meta name="description"
+        content="Abhijeet Kumar - Senior Power BI Developer specializing in Microsoft Fabric, Azure, SQL Server, Power BI, Snowflake and Data Engineering.">
+
+    <meta name="keywords"
+        content="Power BI, Microsoft Fabric, Azure, SQL Server, Snowflake, Data Engineer, Power BI Developer">
+
+    <meta name="author" content="Abhijeet Kumar">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abhijeet Kumar Portfolio">
+    <meta property="og:description"
+        content="Senior Power BI Developer | Microsoft Fabric | Azure | SQL Server">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress -->
+    <div id="progressBar"></div>
+
+    <!-- Navigation -->
+    <header>
+
+        <div class="logo">
+            AK
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#experience">Experience</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#resume">Resume</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button id="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-left">
+
+            <p class="small-heading">Hello, I'm</p>
+
+            <h1>Abhijeet Kumar</h1>
+
+            <h2>
+                <span id="typing"></span>
+            </h2>
+
+            <p class="hero-desc">
+
+                Passionate about building scalable Business Intelligence solutions using Microsoft Fabric,
+                Power BI, Azure Data Factory, SQL Server and Snowflake.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn primary">
+                    Contact Me
+                </a>
+
+                <a href="assets/resume/Abhijeet_Kumar_Resume.pdf"
+                    class="btn secondary"
+                    target="_blank">
+
+                    Download Resume
+
+                </a>
+
+            </div>
+
+            <div class="social">
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="mailto:abhi.jeet_kumar@yahoo.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img src="assets/img/profile.jpg"
+                alt="Abhijeet Kumar">
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="card">
+
+            <p>
+
+                I'm a Senior Power BI Developer with extensive experience designing enterprise-grade
+                Business Intelligence solutions.
+
+            </p>
+
+            <p>
+
+                I specialize in Microsoft Fabric, Power BI, Azure Data Factory, SQL Server,
+                Snowflake, Data Warehousing, Semantic Models and DAX optimization.
+
+            </p>
+
+            <div class="stats">
+
+                <div>
+
+                    <h3>8+</h3>
+
+                    <p>Years Experience</p>
+
+                </div>
+
+                <div>
+
+                    <h3>50+</h3>
+
+                    <p>Dashboards Delivered</p>
+
+                </div>
+
+                <div>
+
+                    <h3>100%</h3>
+
+                    <p>Client Focused</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Experience -->
+
+    <section id="experience">
+
+        <h2 class="section-title">
+            Experience
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>Senior Power BI Developer</h3>
+
+                <span>ZiniosEdge Software Technologies</span>
+
+                <p>
+                    Designing enterprise Power BI and Microsoft Fabric solutions,
+                    semantic models, ETL pipelines and performance optimization.
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Technical Lead</h3>
+
+                <span>Encora Innovation Labs</span>
+
+                <p>
+
+                    Led migration of SSRS reports to Power BI,
+                    managed Azure DevOps,
+                    developed enterprise reporting solutions.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Power BI Developer</h3>
+
+                <span>Capgemini</span>
+
+                <p>
+
+                    Developed enterprise dashboards,
+                    SSIS packages,
+                    SQL Server optimization,
+                    Row-Level Security,
+                    Data Modeling.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+
+            Skills
+
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill">Power BI</div>
+            <div class="skill">Microsoft Fabric</div>
+            <div class="skill">DAX</div>
+            <div class="skill">Power Query</div>
+            <div class="skill">SQL Server</div>
+            <div class="skill">Azure Data Factory</div>
+            <div class="skill">Azure Synapse</div>
+            <div class="skill">Snowflake</div>
+            <div class="skill">SSIS</div>
+            <div class="skill">Azure DevOps</div>
+            <div class="skill">Data Warehousing</div>
+            <div class="skill">Semantic Models</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+
+            Featured Projects
+
+        </h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+
+                <h3>Enterprise Executive Dashboard</h3>
+
+                <p>
+
+                    Executive KPI Dashboard built using
+                    Power BI,
+                    SQL Server and DAX.
+
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Microsoft Fabric Analytics</h3>
+
+                <p>
+
+                    Fabric Lakehouse,
+                    Data Factory,
+                    Semantic Models
+                    and Power BI reporting.
+
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Power BI Optimization</h3>
+
+                <p>
+
+                    Improved dashboard performance
+                    by optimizing DAX,
+                    Data Models
+                    and Incremental Refresh.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Resume -->
+
+    <section id="resume">
+
+        <h2 class="section-title">
+
+            Resume
+
+        </h2>
+
+        <div class="resume-card">
+
+            <p>
+
+                Download my latest professional resume.
+
+            </p>
+
+            <a href="assets/resume/Abhijeet_Kumar_Resume.pdf"
+                class="btn primary"
+                target="_blank">
+
+                Download Resume
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+
+            Contact
+
+        </h2>
+
+        <div class="contact-card">
+
+            <p>
+
+                Interested in collaborating?
+
+            </p>
+
+            <p>
+
+                📧
+                <a href="mailto:abhi.jeet_kumar@yahoo.com">
+
+                    abhi.jeet_kumar@yahoo.com
+
+                </a>
+
+            </p>
+
+            <p>
+
+                Open to Full-time opportunities,
+                Freelancing,
+                Consulting,
+                and Microsoft Fabric implementations.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Abhijeet Kumar
+
+    </footer>
+
+    <button id="topBtn">
+
+        ↑
+
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
