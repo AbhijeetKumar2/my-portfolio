@@ -577,3 +577,1109 @@ nav a:hover::after{
     }
 
 }
+/* ==========================================================
+   PART 2
+   About | Stats | Cards | Experience | Skills
+   Projects | Resume | Contact
+==========================================================*/
+
+/* ===========================
+   GENERIC CARD
+=========================== */
+
+.card,
+.resume-card,
+.contact-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:45px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover,
+.resume-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card p{
+
+    margin-bottom:18px;
+
+    font-size:1.05rem;
+
+}
+
+/* ===========================
+   ABOUT STATS
+=========================== */
+
+.stats{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.stats div{
+
+    background:var(--surface-light);
+
+    border-radius:14px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.stats div:hover{
+
+    transform:translateY(-8px);
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.stats div:hover p{
+
+    color:#fff;
+
+}
+
+.stats h3{
+
+    font-size:2.4rem;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.stats div:hover h3{
+
+    color:#fff;
+
+}
+
+/* ===========================
+   EXPERIENCE
+=========================== */
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding-left:45px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:12px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    padding:30px;
+
+    border-radius:16px;
+
+    margin-bottom:35px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.timeline-item:hover{
+
+    transform:translateX(10px);
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-42px;
+
+    top:35px;
+
+    width:18px;
+
+    height:18px;
+
+    background:var(--primary);
+
+    border-radius:50%;
+
+    border:4px solid var(--background);
+
+}
+
+.timeline-item h3{
+
+    font-size:1.4rem;
+
+    margin-bottom:8px;
+
+}
+
+.timeline-item span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.timeline-item p{
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+.skill{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    cursor:default;
+
+}
+
+.skill:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,120,212,.35);
+
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:var(--surface);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid var(--border);
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+    padding:35px;
+
+    position:relative;
+
+}
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.project-card h3{
+
+    margin-bottom:20px;
+
+    font-size:1.35rem;
+
+}
+
+.project-card p{
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.project-tags span{
+
+    background:rgba(0,120,212,.12);
+
+    color:var(--primary);
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   RESUME
+=========================== */
+
+.resume-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.resume-card p{
+
+    margin-bottom:30px;
+
+    font-size:1.1rem;
+
+}
+
+.resume-preview{
+
+    margin-top:35px;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    border:1px solid var(--border);
+
+}
+
+.resume-preview iframe{
+
+    width:100%;
+
+    height:650px;
+
+    border:none;
+
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-card{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.contact-card p{
+
+    margin-bottom:18px;
+
+    font-size:1.08rem;
+
+}
+
+.contact-card a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.contact-card a:hover{
+
+    text-decoration:underline;
+
+}
+
+.contact-links{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-links a{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--surface-light);
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    transition:.3s;
+
+}
+
+.contact-links a:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-6px);
+
+}
+
+/* ===========================
+   SECTION REVEAL ANIMATION
+=========================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/* ==========================================================
+   PART 3
+   Footer | Scroll Progress | Back To Top
+   Utilities | Responsive Design | Final Polish
+==========================================================*/
+
+/* ===========================
+   PROGRESS BAR
+=========================== */
+
+#progressBar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:0%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    z-index:9999;
+
+}
+
+/* ===========================
+   BACK TO TOP
+=========================== */
+
+#topBtn{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,120,212,.35);
+
+}
+
+#topBtn:hover{
+
+    transform:translateY(-6px);
+
+    background:var(--primary-dark);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    border-top:1px solid var(--border);
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+
+    background:var(--surface);
+
+}
+
+/* ===========================
+   CURSOR
+=========================== */
+
+#typing::after{
+
+    content:"|";
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    0%,100%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================
+   HOVER EFFECTS
+=========================== */
+
+.card,
+.timeline-item,
+.project-card,
+.skill,
+.stats div,
+.resume-card,
+.contact-card{
+
+    transition:
+        transform .35s,
+        box-shadow .35s,
+        background .35s;
+
+}
+
+.project-card:hover,
+.timeline-item:hover,
+.card:hover,
+.resume-card:hover,
+.contact-card:hover{
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.25);
+
+}
+
+/* ===========================
+   UTILITIES
+=========================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{
+
+    margin-top:10px;
+
+}
+
+.mt-2{
+
+    margin-top:20px;
+
+}
+
+.mt-3{
+
+    margin-top:30px;
+
+}
+
+.mt-4{
+
+    margin-top:40px;
+
+}
+
+.mb-1{
+
+    margin-bottom:10px;
+
+}
+
+.mb-2{
+
+    margin-bottom:20px;
+
+}
+
+.mb-3{
+
+    margin-bottom:30px;
+
+}
+
+.mb-4{
+
+    margin-bottom:40px;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+/* ===========================
+   SMOOTH IMAGE EFFECTS
+=========================== */
+
+.hero-right img{
+
+    transition:
+        transform .45s,
+        box-shadow .45s;
+
+}
+
+.hero-right img:hover{
+
+    transform:scale(1.04);
+
+    box-shadow:
+        0 0 60px rgba(0,120,212,.45);
+
+}
+
+/* ===========================
+   LINK HOVER
+=========================== */
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   MOBILE MENU PLACEHOLDER
+=========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:1024px){
+
+.hero{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.hero-left{
+
+    order:2;
+
+}
+
+.hero-right{
+
+    order:1;
+
+}
+
+.hero-right img{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.social{
+
+    justify-content:center;
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+section{
+
+    padding:80px 0;
+
+}
+
+header{
+
+    padding:18px 25px;
+
+}
+
+nav ul{
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.logo{
+
+    font-size:1.5rem;
+
+}
+
+h1{
+
+    font-size:2.7rem;
+
+}
+
+h2{
+
+    font-size:1.45rem;
+
+}
+
+.section-title{
+
+    font-size:2rem;
+
+}
+
+.hero{
+
+    gap:30px;
+
+}
+
+.hero-right img{
+
+    width:240px;
+
+    height:240px;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.projects{
+
+    grid-template-columns:1fr;
+
+}
+
+.skills-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.timeline{
+
+    padding-left:25px;
+
+}
+
+.timeline::before{
+
+    left:8px;
+
+}
+
+.timeline-item::before{
+
+    left:-27px;
+
+}
+
+.card,
+.resume-card,
+.contact-card{
+
+    padding:30px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.btn{
+
+    width:230px;
+
+}
+
+footer{
+
+    font-size:.85rem;
+
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+body{
+
+    font-size:15px;
+
+}
+
+header{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+nav ul{
+
+    gap:12px;
+
+}
+
+.hero-right img{
+
+    width:200px;
+
+    height:200px;
+
+}
+
+h1{
+
+    font-size:2.2rem;
+
+}
+
+h2{
+
+    font-size:1.2rem;
+
+}
+
+.skills-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+#topBtn{
+
+    width:48px;
+
+    height:48px;
+
+    right:20px;
+
+    bottom:20px;
+
+}
+
+}
+
+/* ===========================
+   SCROLLBAR (LIGHT MODE)
+=========================== */
+
+body.light::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+body.light::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+}
+
+/* ===========================
+   ACCESSIBILITY
+=========================== */
+
+button:focus,
+a:focus{
+
+    outline:3px solid rgba(0,120,212,.35);
+
+    outline-offset:4px;
+
+}
+
+/* ===========================
+   PRINT
+=========================== */
+
+@media print{
+
+header,
+footer,
+#topBtn,
+#progressBar,
+.social,
+.hero-buttons{
+
+    display:none !important;
+
+}
+
+body{
+
+    background:#fff;
+
+    color:#000;
+
+}
+
+section{
+
+    width:100%;
+
+    padding:20px;
+
+}
+
+}
+
+/* ==========================================================
+   END OF FILE
+==========================================================*/
