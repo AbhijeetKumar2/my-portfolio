@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website!
 
-This website showcases my experience, technical skills, featured projects, resume, and contact information as a **Senior Power BI Developer** specializing in **Microsoft Fabric**, **Power BI**, **Azure**, and **Data Engineering**.
+This website showcases my experience, technical skills, featured projects, resume, and contact information as a **Senior Power BI Developer** specializing in **Microsoft Fabric**, **Azure**, and **Data Engineering**.
 
 ---
 
@@ -16,7 +16,7 @@ Visit my portfolio here:
 
 ## 👨‍💻 About Me
 
-I have over 8 years of experience in designing and delivering enterprise Business Intelligence solutions.
+I have over 12 years of experience in designing and delivering enterprise Business Intelligence solutions.
 
 My expertise includes:
 
