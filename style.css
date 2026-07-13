@@ -516,24 +516,63 @@ nav a:hover::after{
 
     background:var(--surface);
 
-    color:var(--primary);
+    color:var(--text);
 
     font-size:22px;
 
-    transition:.3s;
+    transition:all .3s ease;
+
+    border:2px solid transparent;
 
 }
 
 .social a:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-6px) scale(1.08);
 
-    background:var(--primary);
-
-    color:white;
+    color:#fff;
 
 }
 
+/* LinkedIn */
+
+.social a.linkedin:hover{
+
+    background:#0A66C2;
+
+    box-shadow:0 0 18px rgba(10,102,194,.45);
+
+}
+
+/* YouTube */
+
+.social a.youtube:hover{
+
+    background:#FF0000;
+
+    box-shadow:0 0 18px rgba(255,0,0,.45);
+
+}
+
+/* GitHub */
+
+.social a.github:hover{
+
+    background:#24292F;
+
+    box-shadow:0 0 18px rgba(36,41,47,.45);
+
+}
+
+/* Email */
+
+.social a.email:hover{
+
+    background:#EA4335;
+
+    box-shadow:0 0 18px rgba(234,67,53,.45);
+
+}
 /* ===========================
    ANIMATIONS
 =========================== */
